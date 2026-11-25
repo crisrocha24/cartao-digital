@@ -1,0 +1,19 @@
+
+# Arquivos temporários do Windows
+Thumbs.db
+Desktop.ini
+
+# Configurações locais do VS Code
+.vscode/
+
+# Arquivos temporários de programação
+__pycache__/
+*.pyc
+
+# Arquivos de ambiente e informações privadas
+.env
+.env.*
+!.env.example
+
+# Arquivos de sistema
+.DS_Store

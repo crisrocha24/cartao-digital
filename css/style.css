@@ -1,0 +1,414 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #151A15;
+    color: #E4E8DF;
+    font-family: Consolas, monospace;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* CABEÇALHO */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    border-bottom: 1px solid #394735;
+}
+
+header p {
+    color: #9BCB83;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header span {
+    color: #AAB5A1;
+    font-size: 12px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+main {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+/* APRESENTAÇÃO */
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #202820;
+    border: 1px solid #394735;
+    border-radius: 15px;
+    padding: 40px;
+    margin-bottom: 35px;
+}
+
+/* FOTO */
+
+.foto img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #657653;
+}
+
+/* TEXTOS */
+
+.terminal {
+    color: #9BCB83;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.conteudo h1 {
+    color: #E4E8DF;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.conteudo h2 {
+    color: #9BCB83;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.descricao {
+    color: #AAB5A1;
+    margin-bottom: 20px;
+}
+
+/* SEÇÕES */
+
+section:not(.apresentacao) {
+    background-color: #202820;
+    border: 1px solid #394735;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+section h2 {
+    color: #9BCB83;
+    margin-bottom: 18px;
+}
+
+/* TECNOLOGIAS */
+
+.lista-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.lista-tecnologias span {
+    background-color: #394735;
+    color: #E4E8DF;
+    padding: 9px 16px;
+    border-radius: 6px;
+    border: 1px solid #657653;
+}
+
+/* PROJETOS */
+
+.projeto {
+    background-color: #151A15;
+    padding: 20px;
+    border-left: 3px solid #9BCB83;
+    border-radius: 5px;
+}
+
+.projeto h3 {
+    color: #E4E8DF;
+    margin-bottom: 10px;
+}
+
+.projeto p {
+    color: #AAB5A1;
+    margin-bottom: 15px;
+}
+
+/* LINKS */
+
+a {
+    color: #9BCB83;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.links a {
+    background-color: #394735;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 1px solid #657653;
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    color: #78866A;
+    font-size: 12px;
+    padding: 25px;
+    border-top: 1px solid #394735;
+}
+
+/* CELULAR */
+
+@media (max-width: 650px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .conteudo h1 {
+        font-size: 25px;
+    }
+
+    .lista-tecnologias {
+        justify-content: center;
+    }
+
+    .links {
+        justify-content: center;
+    }
+}
+
+
+/* ÁREA DO QR CODE */
+
+.qr-container {
+    margin-top: 35px;
+    padding: 25px;
+    background-color: #151A15;
+    border: 1px solid #657653;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.qr-container h3 {
+    color: #9BCB83;
+    margin-bottom: 10px;
+}
+
+.qr-container p {
+    color: #AAB5A1;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#qrcode {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: fit-content;
+    padding: 12px;
+    margin: 0 auto 15px;
+    border-radius: 8px;
+}
+
+#qrcode img {
+    display: block;
+}
+
+.qr-container span {
+    color: #78866A;
+    font-size: 12px;
+}
+
+
+/* ÁREA DO QR CODE */
+
+.qr-container {
+    margin-top: 35px;
+    padding: 25px;
+    background-color: #151A15;
+    border: 1px solid #657653;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.qr-container h3 {
+    color: #9BCB83;
+    margin-bottom: 10px;
+}
+
+.qr-container p {
+    color: #AAB5A1;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#qrcode {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: fit-content;
+    padding: 12px;
+    margin: 0 auto 15px;
+    border-radius: 8px;
+}
+
+#qrcode img {
+    display: block;
+}
+
+.qr-container span {
+    color: #78866A;
+    font-size: 12px;
+}
+
+
+/* =====================================
+   ACABAMENTO PROFISSIONAL
+===================================== */
+
+/* CARDS DAS SEÇÕES */
+.sobre,
+.tecnologias,
+.projetos,
+.contato,
+.curriculo {
+    margin-top: 25px;
+    padding: 30px;
+    background-color: #202820;
+    border: 1px solid #394735;
+    border-radius: 12px;
+}
+
+/* TÍTULOS */
+.sobre h2,
+.tecnologias h2,
+.projetos h2,
+.contato h2,
+.curriculo h2 {
+    color: #9BCB83;
+    margin-bottom: 18px;
+}
+
+/* TEXTO */
+.sobre p,
+.projetos p,
+.contato p,
+.curriculo p {
+    color: #AAB5A1;
+    line-height: 1.8;
+}
+
+/* TECNOLOGIAS */
+.lista-tecnologias span {
+    transition: 0.3s ease;
+    cursor: default;
+}
+
+.lista-tecnologias span:hover {
+    background-color: #657653;
+    color: #FFFFFF;
+    transform: translateY(-3px);
+}
+
+/* CARD DE PROJETO */
+.projeto {
+    padding: 22px;
+    background-color: #151A15;
+    border: 1px solid #394735;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.projeto:hover {
+    border-color: #9BCB83;
+    transform: translateY(-4px);
+}
+
+/* BOTÕES */
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.links a,
+.projeto a {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #394735;
+    color: #E4E8DF;
+    text-decoration: none;
+    border: 1px solid #657653;
+    border-radius: 7px;
+    transition: 0.3s ease;
+}
+
+.links a:hover,
+.projeto a:hover {
+    background-color: #657653;
+    color: #FFFFFF;
+    transform: translateY(-3px);
+}
+
+/* CURRÍCULO */
+.curriculo {
+    text-align: center;
+}
+
+/* QR CODE */
+.qr-container {
+    margin-top: 35px;
+    padding: 25px;
+    background-color: #151A15;
+    border: 1px solid #657653;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 650px) {
+    .sobre,
+    .tecnologias,
+    .projetos,
+    .contato,
+    .curriculo {
+        padding: 20px;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    .links a {
+        text-align: center;
+    }
+}
