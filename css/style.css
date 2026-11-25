@@ -1,5 +1,7 @@
 
-/* CONFIGURAÇÕES GERAIS */
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
 
 * {
     margin: 0;
@@ -7,408 +9,540 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #151A15;
-    color: #E4E8DF;
-    font-family: Consolas, monospace;
-    line-height: 1.6;
-    padding: 20px;
+html {
+    scroll-behavior: smooth;
 }
 
-/* CABEÇALHO */
+body {
+    background-color: #1b241e;
+    color: #dce8d5;
+    font-family: "Consolas", "Courier New", monospace;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   CABEÇALHO
+======================================== */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 8%;
-    border-bottom: 1px solid #394735;
+
+    padding: 25px 8%;
+
+    background-color: #202b23;
+    border-bottom: 1px solid #3f5540;
 }
 
 header p {
-    color: #9BCB83;
+    color: #a5c98c;
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px;
 }
 
 header span {
-    color: #AAB5A1;
-    font-size: 12px;
+    color: #8b9b87;
+    font-size: 13px;
+    letter-spacing: 2px;
 }
 
-/* CONTEÚDO PRINCIPAL */
+
+/* ========================================
+   CONTEÚDO PRINCIPAL
+======================================== */
 
 main {
-    max-width: 1000px;
-    margin: 50px auto;
+    width: 84%;
+    max-width: 1100px;
+    margin: 40px auto;
 }
 
-/* APRESENTAÇÃO */
+
+/* ========================================
+   CONTAINERS DAS SEÇÕES
+======================================== */
+
+section {
+    background-color: #263329;
+
+    border: 1px solid #3f5540;
+    border-radius: 12px;
+
+    padding: 35px;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0 5px 15px #00000015;
+}
+
+
+/* Títulos das seções */
+
+section > h2 {
+    color: #b4d49b;
+    font-size: 25px;
+
+    margin-bottom: 20px;
+
+    border-left: 4px solid #6b895b;
+    padding-left: 15px;
+}
+
+
+/* Textos das seções */
+
+section > p {
+    color: #c0cdb9;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+/* ========================================
+   APRESENTAÇÃO
+======================================== */
 
 .apresentacao {
     display: flex;
     align-items: center;
     gap: 40px;
-    background-color: #202820;
-    border: 1px solid #394735;
-    border-radius: 15px;
-    padding: 40px;
-    margin-bottom: 35px;
-}
 
-/* FOTO */
+    padding: 40px;
+}
 
 .foto img {
-    width: 190px;
-    height: 190px;
+    width: 180px;
+    height: 180px;
+
     object-fit: cover;
-    border-radius: 12px;
-    border: 3px solid #657653;
-}
 
-/* TEXTOS */
-
-.terminal {
-    color: #9BCB83;
-    font-size: 13px;
-    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid #6b895b;
 }
 
 .conteudo h1 {
-    color: #E4E8DF;
-    font-size: 32px;
-    margin-bottom: 8px;
+    color: #b4d49b;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 .conteudo h2 {
-    color: #9BCB83;
-    font-size: 18px;
+    color: #dce8d5;
+    font-size: 21px;
+    font-weight: normal;
     margin-bottom: 15px;
 }
 
 .descricao {
-    color: #AAB5A1;
-    margin-bottom: 20px;
+    color: #a2b19c;
+    font-size: 17px;
 }
 
-/* SEÇÕES */
 
-section:not(.apresentacao) {
-    background-color: #202820;
-    border: 1px solid #394735;
-    border-radius: 15px;
-    padding: 30px;
-    margin-bottom: 25px;
+/* ========================================
+   SOBRE MIM
+======================================== */
+
+.sobre p {
+    color: #c0cdb9;
+    line-height: 2;
+    text-align: justify;
 }
 
-section h2 {
-    color: #9BCB83;
-    margin-bottom: 18px;
-}
 
-/* TECNOLOGIAS */
+/* ========================================
+   TECNOLOGIAS
+======================================== */
 
 .lista-tecnologias {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+
+    margin-top: 25px;
 }
+
+
+/* Todas as tecnologias dentro de blocos */
+
+.lista-tecnologias a,
+.lista-tecnologias span {
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    background-color: #354536;
+
+    border: 1px solid #5d7050;
+    border-radius: 8px;
+
+    color: #dce8d5;
+    font-size: 17px;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Tecnologias com projetos */
+
+.lista-tecnologias a {
+    cursor: pointer;
+}
+
+
+/* Efeito ao passar o mouse */
+
+.lista-tecnologias a:hover {
+    background-color: #52684d;
+
+    border-color: #a5c98c;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 5px 15px #00000030;
+}
+
+
+/* Tecnologias sem projeto vinculado */
 
 .lista-tecnologias span {
-    background-color: #394735;
-    color: #E4E8DF;
-    padding: 9px 16px;
-    border-radius: 6px;
-    border: 1px solid #657653;
+    opacity: 0.75;
+    cursor: default;
 }
 
-/* PROJETOS */
+
+/* ========================================
+   PROJETOS
+======================================== */
 
 .projeto {
-    background-color: #151A15;
-    padding: 20px;
-    border-left: 3px solid #9BCB83;
-    border-radius: 5px;
+    background-color: #1f2a22;
+
+    border: 1px solid #3f5540;
+    border-radius: 10px;
+
+    padding: 25px;
+
+    margin-top: 20px;
+
+    transition: all 0.3s ease;
 }
 
-.projeto h3 {
-    color: #E4E8DF;
-    margin-bottom: 10px;
+
+/* Efeito ao passar o mouse */
+
+.projeto:hover {
+    border-color: #8eae75;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px #00000025;
 }
 
-.projeto p {
-    color: #AAB5A1;
+
+/* Identificação da tecnologia */
+
+.categoria {
+    display: inline-block;
+
+    padding: 5px 12px;
+
+    background-color: #354536;
+
+    border: 1px solid #5d7050;
+    border-radius: 20px;
+
+    color: #a5c98c;
+    font-size: 13px;
+
     margin-bottom: 15px;
 }
 
-/* LINKS */
 
-a {
-    color: #9BCB83;
+/* Título do projeto */
+
+.projeto h3 {
+    color: #b4d49b;
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Descrição */
+
+.projeto p {
+    color: #c0cdb9;
+    margin-bottom: 20px;
+}
+
+
+/* Link do GitHub */
+
+.projeto a {
+    display: inline-block;
+
+    color: #a5c98c;
+    font-weight: bold;
+
     text-decoration: none;
+
     transition: 0.3s;
 }
 
-a:hover {
-    color: #FFFFFF;
+.projeto a:hover {
+    color: #ffffff;
     text-decoration: underline;
 }
+
+
+/* Destaque ao clicar na tecnologia */
+
+.projeto:target {
+    border-color: #a5c98c;
+
+    box-shadow: 0 0 20px #8eae7540;
+
+    animation: destaque 1.5s ease;
+}
+
+@keyframes destaque {
+    0% {
+        background-color: #52684d;
+    }
+
+    100% {
+        background-color: #1f2a22;
+    }
+}
+
+
+/* ========================================
+   CURRÍCULO
+======================================== */
+
+.curriculo {
+    text-align: center;
+}
+
+.curriculo > h2 {
+    text-align: left;
+}
+
+
+/* ========================================
+   LINKS
+======================================== */
 
 .links {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
-    margin-top: 20px;
+
+    margin-top: 25px;
 }
 
 .links a {
-    background-color: #394735;
-    padding: 10px 20px;
-    border-radius: 6px;
-    border: 1px solid #657653;
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    background-color: #354536;
+
+    border: 1px solid #5d7050;
+    border-radius: 8px;
+
+    color: #dce8d5;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
 }
 
-/* RODAPÉ */
+.links a:hover {
+    background-color: #52684d;
+
+    border-color: #a5c98c;
+
+    transform: translateY(-3px);
+}
+
+
+/* ========================================
+   CONTATO
+======================================== */
+
+.contato {
+    text-align: center;
+}
+
+.contato > h2 {
+    text-align: left;
+}
+
+
+/* ========================================
+   QR CODE
+======================================== */
+
+.qr-container {
+    margin-top: 40px;
+    padding: 30px;
+
+    background-color: #1f2a22;
+
+    border: 1px solid #3f5540;
+    border-radius: 10px;
+}
+
+.qr-container h3 {
+    color: #b4d49b;
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+.qr-container p {
+    color: #a2b19c;
+    margin-bottom: 20px;
+}
+
+#qrcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 25px auto;
+}
+
+#qrcode img,
+#qrcode canvas {
+    padding: 10px;
+
+    background-color: #ffffff;
+
+    border-radius: 8px;
+}
+
+.qr-container span {
+    display: block;
+
+    color: #8b9b87;
+    font-size: 13px;
+}
+
+
+/* ========================================
+   RODAPÉ
+======================================== */
 
 footer {
     text-align: center;
-    color: #78866A;
-    font-size: 12px;
+
     padding: 25px;
-    border-top: 1px solid #394735;
+
+    background-color: #202b23;
+
+    border-top: 1px solid #3f5540;
+
+    color: #8b9b87;
+    font-size: 14px;
 }
 
-/* CELULAR */
 
-@media (max-width: 650px) {
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 768px) {
 
     header {
-        padding: 15px 5%;
+        flex-direction: column;
+        gap: 8px;
+
+        text-align: center;
+        padding: 20px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    header span {
+        font-size: 11px;
+    }
+
+    main {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    section {
+        padding: 22px;
+        margin-bottom: 25px;
     }
 
     .apresentacao {
         flex-direction: column;
         text-align: center;
-        padding: 25px;
+
+        padding: 30px 22px;
+    }
+
+    .foto img {
+        width: 150px;
+        height: 150px;
     }
 
     .conteudo h1 {
-        font-size: 25px;
+        font-size: 29px;
+    }
+
+    .conteudo h2 {
+        font-size: 18px;
+    }
+
+    section > h2 {
+        font-size: 22px;
     }
 
     .lista-tecnologias {
         justify-content: center;
     }
 
-    .links {
-        justify-content: center;
+    .lista-tecnologias a,
+    .lista-tecnologias span {
+        padding: 10px 16px;
+        font-size: 15px;
     }
-}
 
-
-/* ÁREA DO QR CODE */
-
-.qr-container {
-    margin-top: 35px;
-    padding: 25px;
-    background-color: #151A15;
-    border: 1px solid #657653;
-    border-radius: 12px;
-    text-align: center;
-}
-
-.qr-container h3 {
-    color: #9BCB83;
-    margin-bottom: 10px;
-}
-
-.qr-container p {
-    color: #AAB5A1;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-#qrcode {
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    width: fit-content;
-    padding: 12px;
-    margin: 0 auto 15px;
-    border-radius: 8px;
-}
-
-#qrcode img {
-    display: block;
-}
-
-.qr-container span {
-    color: #78866A;
-    font-size: 12px;
-}
-
-
-/* ÁREA DO QR CODE */
-
-.qr-container {
-    margin-top: 35px;
-    padding: 25px;
-    background-color: #151A15;
-    border: 1px solid #657653;
-    border-radius: 12px;
-    text-align: center;
-}
-
-.qr-container h3 {
-    color: #9BCB83;
-    margin-bottom: 10px;
-}
-
-.qr-container p {
-    color: #AAB5A1;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-#qrcode {
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    width: fit-content;
-    padding: 12px;
-    margin: 0 auto 15px;
-    border-radius: 8px;
-}
-
-#qrcode img {
-    display: block;
-}
-
-.qr-container span {
-    color: #78866A;
-    font-size: 12px;
-}
-
-
-/* =====================================
-   ACABAMENTO PROFISSIONAL
-===================================== */
-
-/* CARDS DAS SEÇÕES */
-.sobre,
-.tecnologias,
-.projetos,
-.contato,
-.curriculo {
-    margin-top: 25px;
-    padding: 30px;
-    background-color: #202820;
-    border: 1px solid #394735;
-    border-radius: 12px;
-}
-
-/* TÍTULOS */
-.sobre h2,
-.tecnologias h2,
-.projetos h2,
-.contato h2,
-.curriculo h2 {
-    color: #9BCB83;
-    margin-bottom: 18px;
-}
-
-/* TEXTO */
-.sobre p,
-.projetos p,
-.contato p,
-.curriculo p {
-    color: #AAB5A1;
-    line-height: 1.8;
-}
-
-/* TECNOLOGIAS */
-.lista-tecnologias span {
-    transition: 0.3s ease;
-    cursor: default;
-}
-
-.lista-tecnologias span:hover {
-    background-color: #657653;
-    color: #FFFFFF;
-    transform: translateY(-3px);
-}
-
-/* CARD DE PROJETO */
-.projeto {
-    padding: 22px;
-    background-color: #151A15;
-    border: 1px solid #394735;
-    border-radius: 10px;
-    transition: 0.3s ease;
-}
-
-.projeto:hover {
-    border-color: #9BCB83;
-    transform: translateY(-4px);
-}
-
-/* BOTÕES */
-.links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 20px;
-}
-
-.links a,
-.projeto a {
-    display: inline-block;
-    padding: 12px 18px;
-    background-color: #394735;
-    color: #E4E8DF;
-    text-decoration: none;
-    border: 1px solid #657653;
-    border-radius: 7px;
-    transition: 0.3s ease;
-}
-
-.links a:hover,
-.projeto a:hover {
-    background-color: #657653;
-    color: #FFFFFF;
-    transform: translateY(-3px);
-}
-
-/* CURRÍCULO */
-.curriculo {
-    text-align: center;
-}
-
-/* QR CODE */
-.qr-container {
-    margin-top: 35px;
-    padding: 25px;
-    background-color: #151A15;
-    border: 1px solid #657653;
-    border-radius: 12px;
-    text-align: center;
-}
-
-/* RESPONSIVIDADE */
-@media (max-width: 650px) {
-    .sobre,
-    .tecnologias,
-    .projetos,
-    .contato,
-    .curriculo {
+    .projeto {
         padding: 20px;
     }
 
     .links {
         flex-direction: column;
+        align-items: stretch;
     }
 
     .links a {
         text-align: center;
     }
+
+    .sobre p {
+        text-align: left;
+    }
+
+    .qr-container {
+        padding: 20px;
+    }
+
 }
