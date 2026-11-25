@@ -15,6 +15,7 @@ práticos na área de tecnologia.
 - CSS3
 - JavaScript
 
+
 ## Funcionalidades
 
 - Apresentação pessoal
@@ -23,6 +24,7 @@ práticos na área de tecnologia.
 - Acesso ao currículo em PDF
 - Links para contato
 - QR Code para WhatsApp
+
 
 ## Desenvolvedora
 
