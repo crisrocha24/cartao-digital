@@ -546,3 +546,7 @@ footer {
     }
 
 }
+/* Espaçamento entre projetos e currículo */
+.curriculo {
+    margin-top: 40px;
+}
